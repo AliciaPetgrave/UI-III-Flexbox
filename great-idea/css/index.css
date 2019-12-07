@@ -9,7 +9,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/*border: 0;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -32,7 +32,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	/*list-style: none;*/
 }
 blockquote, q {
 	quotes: none;
@@ -53,6 +53,7 @@ table {
 }
 
 html, body {
+	
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -64,3 +65,178 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body{
+	margin:0 auto;
+}
+* {
+	
+	/*border:1px solid grey;*/
+}
+
+/* Code for Header */
+nav{
+	display:flex;
+	justify-content:space-evenly;
+	padding:20px;
+	align-items:center;
+}
+
+nav a{
+	text-decoration:none;
+	color:grey;
+}
+
+
+/* Code for Content */
+#innovation-on-demand{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	height:50vh;
+}
+
+#innovation-on-demand .get-started{
+	text-decoration:none;
+	color:black;
+	background-color:white;
+	border: 1px solid black;
+	display:flex;
+	align-items:flex-start;
+
+}
+
+#innovation-on-demand h1{
+	font-size:80px;
+}
+
+.get-started{
+	display:flex;
+	justify-content:center;
+}
+
+#innovation-on-demand img{
+	display:flex;
+	padding-left:20%;
+}
+
+/* Code for Features & About */
+#feature-about{
+	background:purple;
+	display:flex;
+	margin:30px;
+}
+
+#
+/* Code for Middle Image */
+
+.middle-img2{
+	
+}
+
+/* Code for Services/Product/Vision */
+#service-product-vision{
+	background:yellow;
+	display:flex;
+	margin:30px;
+}
+
+/*Code for Contact*/
+
+#contact{
+	background:orange;
+	display:flex;
+	flex-direction:column;
+	margin:30px;
+}
+
+#copyright{
+	text-align:center;
+}
+
+
+
+	/* SERVICES.HTML */
+
+/* Code for Navigation*/
+
+#services-img{
+	display:flex;
+	justify-content: center;
+	
+}
+
+#services h1{
+	font-size: 25px;
+}
+
+#services{
+	margin:20px;
+	padding:10px;
+}
+
+/* Code for Main Section*/
+/*#boxes {
+	
+	display:flex;
+	justify-content:space-between;
+	border:1px solid black;
+	background:lightgray;
+
+}*/
+#boxes section{
+	background:lightgray;
+	display:flex;
+	flex-wrap:wrap;
+	margin:30px;
+	width:40%;
+	border:1px solid black;
+	padding:20px;
+}
+
+#boxes2 section{
+	background:lightgray;
+	display:flex;
+	flex-wrap:wrap;
+	margin:20px;
+	border:1px solid black;
+}
+
+#boxes{
+	display:flex;
+	flex-flow: wrap;
+    justify-content: space-between;
+    margin:15px 0;
+    width: 100%;
+}
+
+
+/* Code for Footer*/
+
+#facts ul{
+	list-style-type: square;
+}
+
+footer #facts{
+	
+	margin:20px;
+	width:40%;
+	padding:20px;
+	
+}
+
+
+#image-girl{
+
+	display:flex;
+	justify-content:flex-end;
+	align-items:flex-start;
+
+	
+}
+
+#the-end div{
+	display:flex;
+
+}
